@@ -8,25 +8,31 @@
 <h1>snapshots</h1>
 <ul>
     <li>
-        <a href="firework.jpg" title="a fireworks display">a fireworks display</a>
+        <a href="firework.jpg" onclick="showPic(this); return false;" title="a fireworks display">a fireworks display</a>
     </li>
     <li>
-        <a href="coffee.jpg" title="a cup of black coffee">a cup of black coffee</a>
+        <a href="coffee.jpg" onclick="showPic(this); return false;" title="a cup of black coffee">a cup of black coffee</a>
     </li>
     <li>
-        <a href="rose.jpg" title="red rose">red roses</a>
+        <a href="rose.jpg" onclick="showPic(this); return false;" title="red rose">red roses</a>
     </li>
     <li>
-        <a href="big%20ben.jpg" title="the famous clock">big ben</a>
+        <a href="big%20ben.jpg" onclick="showPic(this); return false;"  title="the famous clock">big ben</a>
     </li>
     <img id="placeholder" src="placeholder.jpg" alt="my image gallery"/>
+    <a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/example.html?_ijt=q6und20nnvjamdk3up76266env"
+       onclick="return false;">Click me</a>
 </ul>
 </body>
 <script>
     function showPic(whichpic) {
-        whichPic.getAttribute("href");
-        var source=whichpic.getAttribute("href");
 
+        var source = whichpic.getAttribute("href");
+        var placeholder = document.getElementById("placeholder");
+        placeholder.setAttribute("scr","source");
+        event ="javascript statement(s)"
+        onlink="showPic(this)";
+        onlink ="showPic(this);return false;"
     }
 </script>
 </html>
