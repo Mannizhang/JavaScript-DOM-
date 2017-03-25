@@ -3,36 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>image gallery</title>
+    <link rel="stylesheet" href="layout.css" media="screen">
 </head>
 <body>
-<h1>snapshots</h1>
-<ul>
+<h1>Snapshots</h1>
+  <ul>
     <li>
-        <a href="firework.jpg" onclick="showPic(this); return false;" title="a fireworks display">a fireworks display</a>
+      <a href="firework.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
     </li>
     <li>
-        <a href="coffee.jpg" onclick="showPic(this); return false;" title="a cup of black coffee">a cup of black coffee</a>
+      <a href="coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
     </li>
     <li>
-        <a href="rose.jpg" onclick="showPic(this); return false;" title="red rose">red roses</a>
+      <a href="rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
     </li>
     <li>
-        <a href="big%20ben.jpg" onclick="showPic(this); return false;"  title="the famous clock">big ben</a>
+      <a href="big%20ben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
     </li>
-    <img id="placeholder" src="placeholder.jpg" alt="my image gallery"/>
-    <a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/example.html?_ijt=q6und20nnvjamdk3up76266env"
-       onclick="return false;">Click me</a>
-</ul>
+  </ul>
+  <img id="placeholder" src="placeholder.jpg" alt="my image gallery" />
+    <p id="description">Choose an image.</p>
 </body>
 <script>
     function showPic(whichpic) {
-
         var source = whichpic.getAttribute("href");
         var placeholder = document.getElementById("placeholder");
-        placeholder.setAttribute("scr","source");
-        event ="javascript statement(s)"
-        onlink="showPic(this)";
-        onlink ="showPic(this);return false;"
+        placeholder.setAttribute("src", source);
+
     }
+    function countbodychildren() {
+        var body_children = document.getElementsByTagName("body")[0];
+        alert(body_children.childNodes.length);
+
+    }
+    window.onload = countbodychildren;
+    alert(body_children.nodeType);//知道body-element元素的nodeType属性
+
+
+    function showpic(whichpic) {
+        var source = whichpic.getAttribute("href");
+        var placeholder = document.getElementById("placeholder");
+        placeholder.setAttribute("src", source);
+        var text = whichpic.getAttribute("title");//获取whichpic对象的title属性值
+        var description = document.getElementById("description");//创建一个新的变量来存放它
+         alert(description.firstChild.nodeValue);
+        description.firstChild.nodeValue = text;
+
+    }
+
 </script>
+
+
 </html>
