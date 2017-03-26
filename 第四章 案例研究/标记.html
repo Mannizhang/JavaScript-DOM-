@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>image gallery</title>
     <link rel="stylesheet" href="layout.css" media="screen">
+    <script src="弹开窗口.js"></script>
 </head>
 <body>
 <h1>Snapshots</h1>
@@ -21,8 +22,13 @@
       <a href="big%20ben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
     </li>
   </ul>
+    <a href="#" onclick="popUp('http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj')
+return false;">example
+
+    </a>
   <img id="placeholder" src="placeholder.jpg" alt="my image gallery" />
     <p id="description">Choose an image.</p>
+
 </body>
 <script>
     function showPic(whichpic) {
@@ -48,8 +54,8 @@
         var description = document.getElementById("description");//创建一个新的变量来存放它
          alert(description.firstChild.nodeValue);
         description.firstChild.nodeValue = text;
-
     }
+
 
 </script>
 
