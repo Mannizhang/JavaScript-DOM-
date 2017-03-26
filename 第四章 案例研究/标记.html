@@ -8,26 +8,27 @@
 </head>
 <body>
 <h1>Snapshots</h1>
-  <ul>
+<ul>
     <li>
-      <a href="firework.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
+        <a href="firework.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
     </li>
     <li>
-      <a href="coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
+        <a href="coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
     </li>
     <li>
-      <a href="rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
+        <a href="rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
     </li>
     <li>
-      <a href="big%20ben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
+        <a href="big%20ben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
     </li>
-  </ul>
-    <a href="#" onclick="popUp('http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj')
-return false;">example
-
-    </a>
-  <img id="placeholder" src="placeholder.jpg" alt="my image gallery" />
-    <p id="description">Choose an image.</p>
+</ul>
+<!--<a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj"
+   onclick="popUp('http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj')
+return false;">example</a>原来是这个，可是这个过于复杂了-->
+<a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=78ug0paulcfq8m1nhre5q1sh50"
+onclick="popUp(this.href); return false;">example</a><--!平稳退化的例子-->
+<img id="placeholder" src="placeholder.jpg" alt="my image gallery"/>
+<p id="description">Choose an image.</p>
 
 </body>
 <script>
@@ -52,7 +53,7 @@ return false;">example
         placeholder.setAttribute("src", source);
         var text = whichpic.getAttribute("title");//获取whichpic对象的title属性值
         var description = document.getElementById("description");//创建一个新的变量来存放它
-         alert(description.firstChild.nodeValue);
+        alert(description.firstChild.nodeValue);
         description.firstChild.nodeValue = text;
     }
 
