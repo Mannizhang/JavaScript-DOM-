@@ -26,7 +26,7 @@
    onclick="popUp('http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj')
 return false;">example</a>原来是这个，可是这个过于复杂了-->
 <a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=78ug0paulcfq8m1nhre5q1sh50"
-onclick="popUp(this.href); return false;">example</a><--!平稳退化的例子-->
+   onclick="popUp(this.href); return false;">example</a>
 <img id="placeholder" src="placeholder.jpg" alt="my image gallery"/>
 <p id="description">Choose an image.</p>
 
@@ -56,8 +56,25 @@ onclick="popUp(this.href); return false;">example</a><--!平稳退化的例子--
         alert(description.firstChild.nodeValue);
         description.firstChild.nodeValue = text;
     }
+    window.onload = prepareLinks;
+    function prepareLinks() {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++);
+        {
+            if (links[i].getAttribute("class") == popUp);
+            {
+                links[i].onclick = function () {
+                    popUp(this.getAttribute("href"));
+                    return false;
+                }
+            }
+        }
+    }
+    function popUp(winURL) {
 
+        window.open(winURL, "popup", "width=320;height=480");
 
+    }
 </script>
 
 
