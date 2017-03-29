@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="layout.css" media="screen">
+    <script src="弹开窗口.js"></script>
+</head>
+<body>
+<h1>Snapshots</h1>
+<ul>
+    <li>
+        <a href="firework.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
+    </li>
+    <li>
+        <a href="coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
+    </li>
+    <li>
+        <a href="rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
+    </li>
+    <li>
+        <a href="big%20ben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
+    </li>
+</ul>
+<!--<a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj"
+   onclick="popUp('http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=9vdu844iv24q1bidnoqmgmp0mj')
+return false;">example</a>原来是这个，可是这个过于复杂了-->
+<a href="http://localhost:63342/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/%E6%A0%87%E8%AE%B0.html?_ijt=78ug0paulcfq8m1nhre5q1sh50"
+   onclick="popUp(this.href); return false;">example</a>
+<img id="placeholder" src="placeholder.jpg" alt="my image gallery"/>
+<p id="description">Choose an image.</p>
+
+</body>
+<script>
+    function showPic(whichpic) {
+        var source = whichpic.getAttribute("href");
+        var placeholder = document.getElementById("placeholder");
+        placeholder.setAttribute("src", source);
+
+    }
+    function countbodychildren() {
+        var body_children = document.getElementsByTagName("body")[0];
+        alert(body_children.childNodes.length);
+
+    }
+    window.onload = countbodychildren;
+    alert(body_children.nodeType);//知道body-element元素的nodeType属性
+
+
+    function showpic(whichpic) {
+        var source = whichpic.getAttribute("href");
+        var placeholder = document.getElementById("placeholder");
+        placeholder.setAttribute("src", source);
+        var text = whichpic.getAttribute("title");//获取whichpic对象的title属性值
+        var description = document.getElementById("description");//创建一个新的变量来存放它
+        alert(description.firstChild.nodeValue);
+        description.firstChild.nodeValue = text;
+    }
+    window.onload = prepareLinks;
+    function prepareLinks() {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++);
+        {
+            if (links[i].getAttribute("class") == popUp);
+            {
+                links[i].onclick = function () {
+                    popUp(this.getAttribute("href"));
+                    return false;
+                }
+            }
+        }
+    }
+    function popUp(winURL) {
+
+        window.open(winURL, "popup", "width=320;height=480");
+
+    }
+</script>
+
+
+</html>
