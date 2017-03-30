@@ -75,8 +75,20 @@ return false;">example</a>原来是这个，可是这个过于复杂了-->
         window.open(winURL, "popup", "width=320;height=480");
 
     }
-    function prepareGallery(){
-
+    function prepareGallery() {
+        if (!document.getElementsByTagName)
+            return false;
+        if (!document.getElementById)
+            return false;
+        if (!document.getElementById("imagegallery"))return false;
+    }
+    var gallery=document.getElementById("imagegallery");
+    var links=gallery.getElementsByTagName("a");
+    for (var i=0;i<links.length;i++){
+        links[i].onclick=function () {
+            showPic(this);
+            return false;
+        }
     }
 </script>
 
