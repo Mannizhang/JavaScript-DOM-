@@ -90,7 +90,25 @@ return false;">example</a>原来是这个，可是这个过于复杂了-->
             return false;
         }
     }
+    function  addLoadEvent(func) {
+        var oldonload =window.onload();
+        if(typeof window.onload!='function'){
+        window.onload='func';}
+        else{
+            window.onload=function(){
+                oldonload();
+                func();
+                addLoadEvent(firstFunction);
+                addLoadEvent(secondFunction);
+                addLoadEvent(prepareGallery);
+            }
+        }
+
+    }
 </script>
 
 
 </html>
+
+
+
