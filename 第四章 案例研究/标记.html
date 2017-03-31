@@ -105,6 +105,19 @@ return false;">example</a>原来是这个，可是这个过于复杂了-->
         }
 
     }
+    function showPic(whichpic) {
+        if(!document.getElementById("placeholder"))return false;
+        var source=whichpic.getAttribute("href");
+        var placeholder=document.getElementById("placeholder");
+        placeholder.setAttribute("scr",source);
+        if (document.getElementById("description"));{
+        var text=whichpic.getAttribute("title");
+        var description=document.getElementById("description");
+        description.firstChild.nodeValue=text;
+
+       }
+       return true;
+    }
 </script>
 
 
