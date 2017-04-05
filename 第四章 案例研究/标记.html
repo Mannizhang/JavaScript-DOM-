@@ -76,18 +76,15 @@ return false;">example</a>原来是这个，可是这个过于复杂了-->
 
     }
     function prepareGallery() {
-        if (!document.getElementsByTagName)
-            return false;
-        if (!document.getElementById)
-            return false;
+        if (!document.getElementsByTagName)return false;
+        if (!document.getElementById)return false;
         if (!document.getElementById("imagegallery"))return false;
-    }
     var gallery=document.getElementById("imagegallery");
     var links=gallery.getElementsByTagName("a");
     for (var i=0;i<links.length;i++){
         links[i].onclick=function () {
-            showPic(this);
-            return false;
+            return !showPic(this);
+           }
         }
     }
     function  addLoadEvent(func) {
@@ -109,15 +106,18 @@ return false;">example</a>原来是这个，可是这个过于复杂了-->
         if(!document.getElementById("placeholder"))return false;
         var source=whichpic.getAttribute("href");
         var placeholder=document.getElementById("placeholder");
+        if (placeholder.nodeName!="IMG")return false;
         placeholder.setAttribute("scr",source);
         if (document.getElementById("description"));{
-        var text=whichpic.getAttribute("title");
+        var text=whichpic.getAttribute("title")? whichpic.getAttribute("title"):"";
         var description=document.getElementById("description");
-        description.firstChild.nodeValue=text;
-
+        if (description.firstChild.nodeType==3){
+            description.firstChild.nodeValue=text;
+        }
        }
        return true;
     }
+
 </script>
 
 
