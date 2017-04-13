@@ -19,7 +19,7 @@ window.onload=function () {
     var info="nodeName:";
     info+=para.nodeName;
     info+="nodeType";
-    info+=para.nodeType;    
+    info+=para.nodeType;
     alert(info);
 
 }
