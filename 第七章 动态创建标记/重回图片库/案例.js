@@ -1,3 +1,11 @@
+var placeholder=document.createElement("img");
+placeholder.setAttribute("id","placeholder");
+placeholder.setAttribute("scr",image/placeholder.jpg);
+placeholder.setAttribute("alt","my image gallery");
+var description=document.createElement("p");
+description.setAttribute("id",description);
+var desctext=document.createTextNode("choose an image");
+
 function showPic(whichpic){
     if(!document.getElementById("placeholder")){return false;}
         var source=whichpic.getAttribute("href");
@@ -39,8 +47,4 @@ function addLoadEvent(func){
             }
     }
 addLoadEvent(prepareGallery);
-var placeholder=document.createElement("img");
-placeholder.setAttribute("id","placeholder");
-placeholder.setAttribute("scr",image/placeholder.jpg);
-placeholder.setAttribute()
 
