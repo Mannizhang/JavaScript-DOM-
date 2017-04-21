@@ -14,11 +14,17 @@ function getNewContent() {
                 document.getElementById("new").appendChild(para);
             }
 
-        }
-    }
+        };
+
 
     request.send(null);
 }
+else{
+    alert('Sorry，your brower doesn\'t support XMLHttpRequest');
+
+}
+}
+addLoadEvent(getNewContent());
 
 
 
