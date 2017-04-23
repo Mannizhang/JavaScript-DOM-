@@ -4,6 +4,7 @@
     <list default="true" id="a7097b7f-127c-41e9-8168-0e20e8768237" name="Default" comment="" />
     <ignored path="W3shool的Ajax教程.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +20,22 @@
     <favorites_list name="W3shool的Ajax教程" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="一个简单的GET请求.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="一个简单的GET请求.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="702">
+              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="用GET方法请向 URL 添加信息.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/用GET方法请向 URL 添加信息.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -45,6 +56,7 @@
       <list>
         <option value="$PROJECT_DIR$/一个简单的GET请求.js" />
         <option value="$PROJECT_DIR$/一个简单的GET请求.html" />
+        <option value="$PROJECT_DIR$/用GET方法请向 URL 添加信息.html" />
       </list>
     </option>
   </component>
@@ -86,6 +98,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -106,7 +119,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,6 +212,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -376,7 +394,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/一个简单的GET请求.js">
+    <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -384,10 +402,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/一个简单的GET请求.js" />
     <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="702">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/用GET方法请向 URL 添加信息.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
