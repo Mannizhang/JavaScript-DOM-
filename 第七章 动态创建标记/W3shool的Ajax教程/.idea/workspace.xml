@@ -24,18 +24,28 @@
       <file leaf-file-name="一个简单的GET请求.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="729">
               <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="用GET方法请向 URL 添加信息.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="用GET方法请向 URL 添加信息.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/用GET方法请向 URL 添加信息.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="216">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="一个简单的POST请求.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/一个简单的POST请求.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -57,6 +67,7 @@
         <option value="$PROJECT_DIR$/一个简单的GET请求.js" />
         <option value="$PROJECT_DIR$/一个简单的GET请求.html" />
         <option value="$PROJECT_DIR$/用GET方法请向 URL 添加信息.html" />
+        <option value="$PROJECT_DIR$/一个简单的POST请求.html" />
       </list>
     </option>
   </component>
@@ -97,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -119,6 +129,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,6 +407,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/用GET方法请向 URL 添加信息.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -405,7 +432,7 @@
     <entry file="file://$PROJECT_DIR$/一个简单的GET请求.js" />
     <entry file="file://$PROJECT_DIR$/一个简单的GET请求.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
+        <state relative-caret-position="729">
           <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
           <folding />
         </state>
@@ -413,8 +440,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/用GET方法请向 URL 添加信息.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="216">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/一个简单的POST请求.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding />
         </state>
       </provider>
