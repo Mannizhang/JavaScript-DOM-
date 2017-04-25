@@ -16,5 +16,9 @@
 - 向服务器发送大量数据（POST 没有数据量限制）
 - 发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠
 - 如果您希望通过 GET 方法发送信息，请向 URL 添加信息
+**url-服务器上的文件**open() 方法的 url 参数是服务器上文件的地址
+- xmlhttp.open("GET","ajax_test.asp",true);
+- 该文件是可以是任何类型的文件
+**异步 - True 或 False？**
 ## 渐进增强与Ajax
 ## Hijax
