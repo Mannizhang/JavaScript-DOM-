@@ -37,7 +37,9 @@
 - 如果来自服务器的响应是XML，用responseXML.请求books.xml文件，并解释响应。
 --------------------------------------------------------------------------------------------------------
 ## onreadystatechange事件
-
-
+- 每当readystate改变时，就会触发onreadystatechange事件。
+- readyState 属性存有 XMLHttpRequest 的状态信息。
+- **callback函数**
+- callback 函数是一种以参数形式传递给另一个函数的函数。
 ## 渐进增强与Ajax
 ## Hijax
