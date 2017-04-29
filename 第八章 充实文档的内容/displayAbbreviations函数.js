@@ -11,6 +11,16 @@ function displayAbbreviations() {
         defs[key] = definition;
     }
 }
+var dlist=document.createElement("dl");
+for(key in defs){
+    var definition=defs[key];
+    var dtitle=document.createTextNode(key);
+    dtitle.appendChild(dtitle_text);
+
+}
+
+
+
 
 var header=document.createElement("h2");
 var header_text=document.createTextNode("Abbreviations");
