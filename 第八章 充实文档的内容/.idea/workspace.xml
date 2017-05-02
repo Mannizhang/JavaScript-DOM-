@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTML5explanation.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HTML5explanation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML5explanation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="109" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="109" />
+            <state relative-caret-position="621">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="displayAbbreviations函数.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="displayAbbreviations函数.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/displayAbbreviations函数.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="556">
               <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc;n#displayAbbreviations#0" expanded="false" />
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/explanation.html" />
         <option value="$PROJECT_DIR$/typograpy.css" />
         <option value="$PROJECT_DIR$/HTML5explanation.css" />
-        <option value="$PROJECT_DIR$/HTML5explanation.html" />
         <option value="$PROJECT_DIR$/displayAbbreviations函数.js" />
+        <option value="$PROJECT_DIR$/HTML5explanation.html" />
       </list>
     </option>
   </component>
@@ -636,6 +636,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/displayAbbreviations函数.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc;n#displayAbbreviations#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HTML5explanation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -646,19 +656,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5explanation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="109" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="109" />
+        <state relative-caret-position="621">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/displayAbbreviations函数.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc;n#displayAbbreviations#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
