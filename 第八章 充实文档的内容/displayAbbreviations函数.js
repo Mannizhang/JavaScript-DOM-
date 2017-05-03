@@ -7,6 +7,7 @@ function displayAbbreviations() {
     var defs = new Array();
     for (var i = 0; i < abbreviations.length; i++) {
         var current_abbr =abbreviations[i];
+        if(current_abbr.childNodes.length<1)continue;/*如果当前元素没有子节点，就立刻开始下一次循环*/
         var definition = abbreviations[i].getAttribute("title");
         var key = abbreviations[i].lastChild.nodeValue;
         defs[key] = definition;
@@ -26,8 +27,9 @@ for (key in defs) {/*利用一个for循环把某个数组的下标临时赋值�
     dlist.appendChild(dtitle);
     dlist.appendChild(ddesc);
 }
-
+if(dlist.childNodes.length<1) return false;
 /*插入这个定义列表*/
+
 var header = document.createElement("h2");
 var header_text = document.createTextNode("Abbreviations");
 header.appendChild(header_text);
@@ -36,10 +38,27 @@ document.body.appendChild(header);
 document.body.appendChild(dlist);
 
 /*检查兼容性*/
-if(!document.getElementsByTagName())return false;
-if(!document.createElement())return false;
-if(!document.createTextNode())return false;
+if(!document.getElementsByTagName)return false;
+if(!document.createElement)return false;
+if(!document.createTextNode)return false;
 
+window.onload=displayAbbreviations();
+function  addLoadEvent(func) {
+    var oldonload=window.onload;
+    if(typeof window.onload!='fuction'){
+        window.onload=function () {
+            else{
+                window.onload=function () {
+                    oldonload();
+                    func;
+
+                }
+            }
+
+        }
+    }
+
+}
 
 
 
