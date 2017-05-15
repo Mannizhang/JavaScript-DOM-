@@ -9,8 +9,7 @@ function styleHeaderSiblings() {
     for (var i = 0; i < headers.length; i++) {/*遍历这个节点集合里的所有元素*/
         elem = getNextElement(headers[i].nextSibling);
         /*把当前h1元素的nextSibling节点作为参数传递给getNextElemet函数*/
-        elem.style.fontWeight = "bold";
-        elem.style.fontSize = "1.2em";
+      elem.className="intro";
     }
 
 
