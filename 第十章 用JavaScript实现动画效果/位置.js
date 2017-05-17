@@ -9,5 +9,3 @@ function positionMessage() {
     elem.style.left = "50px";
     elem.style.top = "1000px";
 }
-addLoadEvent(positionMessage);
-addLoadEvent(moveMessage);
