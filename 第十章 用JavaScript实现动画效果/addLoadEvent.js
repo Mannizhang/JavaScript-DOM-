@@ -1,16 +1,14 @@
 /**
  * Created by maryz on 2017/5/26.
  */
-function addLoadEvent(func) {
-    var oldonload=window.onload;
-    if(typeof window.onload!='function'){
-        window.onload=func;
-
-    }else {
-        window.onload=function () {
-            oldonload();
-            func();
-        }
+function addLoadEvent(func){
+    var oldonload = window.onload;
+    if(typeof oldonload != 'function'){
+        window.onload= func;
     }
-
+    else{
+        oldonload();
+        func();
+    }
 }
+

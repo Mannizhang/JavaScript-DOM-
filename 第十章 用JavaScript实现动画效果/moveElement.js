@@ -33,4 +33,4 @@ function moveElement(elementID,final_x,final_y,interval) {//第一步是声明�
     var repeat="moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";
     movement=setTimeout(repeat,interval);
 }
-addLoadEvent(moveElement);
+addLoadEvent(moveElement());
