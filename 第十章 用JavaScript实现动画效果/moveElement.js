@@ -8,8 +8,6 @@ function moveElement(elementID,final_x,final_y,interval) {//第一步是声明�
     var xpos=parseInt(elem.style.left);
     var ypos=parseInt(elem.style.top);//给定元素的left和top属性转换为数值，并把转换结果分别赋值给变量xpos和ypos
 
-
-
     if(xpos==final_x&&ypos==final_y){//检查给定元素是否已经到达目的地
         return true;
     }
