@@ -1,17 +1,17 @@
 /**
  * Created by maryz on 2017/6/1.
  */
-function converToGS(img) {
+function convertToGS(img) {
     if (!Modernizr.canvas)return;
     img.color = img.src;
     img.grayscale = createGSCanvas(img);
     img.onmouseover = function () {
         this.src = this.color;
     }
-    img.onmouseover = function () {
+    img.onmouseout = function () {
         this.src = this.grayscale;
     }
-    img.onmouseover();
+    img.onmouseout();
 }
 function createGSCanvas(img) {
     var canvas = document.createElement("canvas");
@@ -19,14 +19,13 @@ function createGSCanvas(img) {
     canvas.height = img.height;
 
 
-    var ctx = canvas.getContent("2d");
+    var ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
 
     var c = ctx.getImageData(0, 0, img.width, img.height);
-    for (i = 0; i < c.height; i++);
-    {
+    for (i = 0; i < c.height; i++);{
+        for (j=0;j<c.width;j++){
         var x = (i * 4) * c.height + (j * 4);
-        {
             var r = c.data[x];
             var g = c.data[x + 1];
             var b = c.data[x + 2];
@@ -38,5 +37,5 @@ ctx.putImageData(c,0,0,0,0,c.width,c.height);
     return canvas.toDataURL();
 }
 window.onload=function () {
-    converToGS(document.getElementById('avatar'));
+    convertToGS(document.getElementById('avatar'));
 }
