@@ -1,0 +1,21 @@
+- HTML5是HTML语言当前及未来的新标准
+- Web设计最准确的理解是把网页看成三个层:1.结构层HTML 2.样式层 CSS 3.行为层Jvascript dom
+- 11.3.1 Canvas
+- **每个浏览器都可以显示静态图片**
+- HTML5<canvas>元素可以动态创建和操作图形图像
+- <canvas>对象在浏览器中把一幅彩色图片变成灰度图片。当用户的鼠标悬停到图片上面时，再把它切换回原始的彩色图片。
+- 11.3.2 音频和视频
+- video 和 audio 这两个元素让HTML具有了原生视频和音频能力
+- video可以引用各种影片播放器，例如QuickTime RealPlayer Flash ，并且使用这些插件在浏览器中播放影片
+- 想让嵌入的代码发挥作用，浏览器必须安装相应的插件，而且版本还要合适。    
+- 1. **不足**这两个标签都很简单，也都有相应的属性用于显示播放插件或更改播放设置，但是它并未说明支持哪些视频格式
+- **为了保证每个人都能看到视频，必须制作多种格式的视频并在video元素中包含多个来源**
+- 2. 自定义插件
+- 浏览器在显示video元素时，会为其添加一些与浏览器样式统一的标准播放控件。想自定义这些控件的外观，或者添加新的控件，可以通过一些DOM属性来实现：
+- currentTime、duration、 paused、play、pause、loadeddate、ended**不管创建什么控件，都别忘记了在video元素中添加control属性**
+- 删除了video 元素原来的controls属性，从而去掉其内置的控件，接着又创建几个DOM对象，用来充当Pause/Play按钮
+- 11.3.3 表单
+- 如果想让用户更方便在表单中输入日期，就得自己构建页面和必要的javascript
+- 新的输入控件类型包括：email、url、date、number、range、search、tel、color
+- 新的属性:autocomplete、autofocus、form、min，max和step、pattern、placeholder、required**这些属性把很多原来由DOM脚本负责的任务都转移给了浏览器**
+
